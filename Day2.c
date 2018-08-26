@@ -1,9 +1,16 @@
-#include<stdio.h>
-#include<string.h>
-
-int main(){
-    char str[20];
-    scanf("%s",&str);
-    int a = strlen(str);
-    printf("%d",(26*a)+26-a);
+#include <stdio.h>
+int main()
+{
+    int i, n, t1 = 1, t2 = 1, nextTerm,sum = 0;
+    scanf("%d", &n);
+    
+    for (i =1 ; i <=n; ++i)
+    {
+        sum += t1;
+        nextTerm = t1 + t2;
+        t1 = t2;
+        t2 = nextTerm;
+    }
+    printf("%d",sum);
+    return 0;
 }
