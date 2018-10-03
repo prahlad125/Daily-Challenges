@@ -1,7 +1,8 @@
 #include<stdio.h>
 
 int main(){
-    int x,n;
-    scanf("%d",&x);
-    printf("%d",2*x+1);
+    int a;
+    scanf("%d",&a);
+    printf("%d",2*a+1);
+    return 0;
 }
