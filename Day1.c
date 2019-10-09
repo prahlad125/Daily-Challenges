@@ -1,7 +1,10 @@
-#include<stdio.h>
+// Implementing the code in cpp
 
-int main(){
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
     int x,n;
-    scanf("%d",&x);
-    printf("%d",2*x+1);
+    cin >> x;
+    cout << 2*x+1;
 }
